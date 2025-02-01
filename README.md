@@ -1,18 +1,18 @@
 # 환경설정
-Ubuntu 22.04.5 LTS
-Kubernetes 1.32.1
-Kubernetes CNI plugin 1.6.2
+Ubuntu 22.04.5 LTS  
+Kubernetes 1.32.1  
+Kubernetes CNI plugin 1.6.2  
 기준임.
 
 ## K8S
-https://kubernetes.io/releases/
+https://kubernetes.io/releases/  
 에서 쿠버네티스 최신버전 확인 할 것.
 
 ## CNI Plugin
-https://github.com/containernetworking/plugins/releases
-에서 플러그인 최신버전 확인 할 것.
+https://github.com/containernetworking/plugins/releases  
+에서 플러그인 최신버전 확인 할 것.  
 
-가장 중요한 것은 환경설정임.
+가장 중요한 것은 환경설정임.  
 환경 버전에 아주 예민함.
 
 # 1. 시스템 업데이트 및 필수 패키지 설치
@@ -106,7 +106,7 @@ sysctl -p /etc/sysctl.conf
 ```
 sudo systemctl restart containerd && systemctl status containerd
 ```
-containerd가 정상적으로 설치되었는지를 확인
+containerd가 정상적으로 설치되었는지를 확인  
 
 
 # 8. Install kubeadm, kubelet, and kubectl
